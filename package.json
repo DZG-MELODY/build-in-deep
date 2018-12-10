@@ -1,0 +1,26 @@
+{
+  "name": "build-in-deep",
+  "version": "1.0.0",
+  "description": "learn biuld tool in deep",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dzg",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DZG-MELODY/build-in-deep.git"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "@types/rollup": "^0.54.0",
+    "@types/webpack": "^4.4.20",
+    "rollup": "^0.67.4",
+    "webpack": "^4.27.0"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "rimraf": "^2.6.2"
+  }
+}
