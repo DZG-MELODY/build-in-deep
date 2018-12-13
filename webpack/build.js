@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const rmrf = require('rimraf');
 const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = function build (exampleName, options) {
   console.log('>>>>>>>>>> begin to compile webpack');
@@ -15,7 +16,12 @@ module.exports = function build (exampleName, options) {
     optimization: {
       minimize: false
     },
-    mode: options.mode || 'none'
+    mode: options.mode || 'none',
+    plugins: [
+      new CleanWebpackPlugin(['dist'], {
+        root: path.resolve(__dirname, '../')
+      })
+    ]
   });
   compile.run((err, stats) => {
     if (err) {

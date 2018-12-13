@@ -1,3 +1,3 @@
-import cmd from './cmd';
+import {cmd} from './cmd';
 
 cmd();

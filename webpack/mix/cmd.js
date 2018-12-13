@@ -2,4 +2,6 @@ function cmd () {
   console.log('cmd');
 }
 
-module.exports = cmd;
+module.exports = {
+  cmd
+};
